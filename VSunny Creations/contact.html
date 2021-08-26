@@ -1,0 +1,63 @@
+<!-- contact us page of vsunny creations website -->
+<!-- About page of VSUNNY creations site  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="contact-script.js" async></script>
+    <script src= "https://smtpjs.com/v3/smtp.js" async></script>
+</head>
+<body>
+    <div class= container>
+        <div class="header"><h1>V Sunny Creations</h1></div>
+        <div class= 'navBar' id="navC"></div>
+            <nav class= 'navBar'>
+            <a class="tabs" href="index.html">Home</a> |
+            <a class="tabs" href="about.html">About</a> |
+            <!-- <a class="tabs" href="">All Products</a> | -->
+            <a class="tabs" href="contact.html">Contact Us</a> |
+            <a class="tabs" href="weatherAPI.html">Is it Sunny Today?</a>
+        </nav>
+        <div class= 'products'>
+            <h2>All Products:</h2>
+            <div class= 'list' id="vertList">
+              <div>Decals</div>
+              <div>Graduation Caps</div>
+              <div>Teacher Appreciation</div>
+              <div>Canvases</div>
+              <div>Water Bottles</div>
+              <div>Paddles</div>
+              <div>Greek Merch</div>
+      
+            </div>
+          </div>
+        <div class= "parAbout">
+            <h1>Contact Us:</h1>
+            <p>
+                If you have any questions or would like to place an order for a custom creation and would like more information please fill out the form below and you will hear back from a representative within 48 hours. 
+            </p>
+            <div>
+                <form onsubmit="return false">
+                    First Name: <br>
+                    <input type="text" name="firstname" class="word" required><br>
+                    Last Name: <br>
+                    <input type="text" name="lastname" class="word" required><br>
+                    Preferred Email: <br>
+                    <input type="email" name="email" required><br>
+                    How can we help you? <br>
+                    <textarea id="paragraph" name="message" rows="10" cols="100" required></textarea><br>
+                    <button id="formsub" type="button" name="button" value="Send Message">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <div class= 'footer'>
+            <img id="instaLogo" src = "images/instaLogo.svg"><a href="https://www.instagram.com/vsunnycreations">Follow us on instagram @vsunnycreations</a>  
+        </div>
+    </div>
+</body>
+</html>

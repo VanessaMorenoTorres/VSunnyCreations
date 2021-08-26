@@ -1,0 +1,143 @@
+/* style sheet for V Sunny creations  */
+h1{
+    font-family: fantasy, blippo;
+    color:  #EC610A
+}
+h2{
+    font-family: fantasy, blippo;
+    color:  #EC610A
+}
+h3{
+    font-family: fantasy, blippo;
+    color:  #EC610A
+}
+body{
+    margin: 0;
+    color: #6B0848;
+    font-size: 16px;
+    /* color:  #EC610A ; */
+}
+a{
+    color:  #6B0848; 
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: 100px 50px 1fr 100px / .3fr repeat(3, 1fr);
+    gap: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    /* border: 1px solid  #EC610A */
+}
+.container div {
+    padding: 10px;
+}
+.header{
+    grid-column: 1/ span 5;
+    background-color: hsla(51, 97%, 54%, 0.767);
+    border-radius: 25px;
+    border: 5px solid #EC610A;
+}
+.footer{
+    grid-column: 1/ span 5;
+    background-color: hsla(51, 97%, 54%, 0.767);
+    display: flex;
+    border-radius:25px;
+    align-items: center;
+    justify-content: center;
+}
+.popItems{
+    grid-column: 2/ span 4;
+    grid-row: 3/ span 1 ;
+    background-color: hsla(51, 97%, 54%, 0.767);
+}
+.navBar{
+    grid-row-start: 2 ;
+    grid-column: 1/ span 5;
+    display: flex;
+    max-width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#navC{
+    background-color: hsla(51, 97%, 54%, 0.767);
+}
+.products{
+    grid-row: 3 / span 1;
+    grid-column: 1;
+    text-align: center;
+    padding: 10px;
+    justify-content: space-evenly;
+    background-color: hsla(51, 97%, 54%, 0.767);
+    border: none;
+}
+.pops{
+    max-width: 250px;
+    max-height: 300px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    padding: 10px;
+    text-align: center;
+}
+#instaLogo{
+    max-height: 40px;
+}
+/* Bellow are styles for About page */
+.parAbout{
+    background-color: hsla(51, 97%, 54%, 0.767);
+    grid-column: 2/ span 4;
+}
+.input{
+    text-align: center;
+    
+}
+input[type = "text"]{
+    height: 20px;
+    max-width: 300px;
+    font-size: 15px;
+    border-radius: 2px;
+    padding: 10px 10px;
+}
+input[type = "submit"]{
+    height: 40px;
+    max-width: 100px;
+    font-size: 15px;
+    border-radius: 2px;
+}
+#paragraph{
+    height: 100px;
+    max-width: 300px;
+    font-size: 15px;
+    border-radius: 2px;
+    padding: 0;
+}
+#formsub{
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 2px;
+    padding: 0;
+}
+.word{
+    max-height: 10px;
+    border-radius: 2px;
+
+}
+@media only screen and (max-width: 500px){
+    .container{
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr .5fr 1fr .5fr ;
+     grid-template-areas: 
+     "header"
+     "navBar"
+     "popItems"
+     "footer";
+ }
+ .products{
+     display: none;
+ }
+}
